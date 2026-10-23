@@ -1,0 +1,21 @@
+#include<stdio.h>
+
+int main()
+{
+ int amount,member,discount=0,total;
+ printf("\n enter order amount:");
+ scanf("%d",&amount);
+ printf("\n enter membership(1-premium,0-regular):");
+ scanf("%d",&member);
+ if(amount>=500)
+   {
+    if(member==1)
+      discount=amount*10/100;
+      total=amount-discount;
+   }
+ else 
+    { 
+      total=amount+50;
+    } 
+     printf("final amount=%d",total);
+}     
